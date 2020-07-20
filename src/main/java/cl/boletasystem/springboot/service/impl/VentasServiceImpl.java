@@ -25,6 +25,9 @@ public class VentasServiceImpl implements IVentasService{
 	
 	@Override
 	public Ventas modificar(Ventas obj) {		
+		obj.getVentasDetalle().forEach(det -> {
+			det.setVentas(obj);
+		});
 		return repo.save(obj);
 	}
 

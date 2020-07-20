@@ -27,6 +27,9 @@ public class ComprasServiceImpl implements IComprasService{
 		
 	@Override
 	public Compras modificar(Compras obj) {		
+		obj.getComprasDetalle().forEach(det -> {
+			det.setCompras(obj);
+		});
 		return repo.save(obj);
 	}
 
