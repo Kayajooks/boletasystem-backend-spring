@@ -1,9 +1,9 @@
 spring:
    mail:
     default-encoding: UTF-8
-    host: mail.hype-tech.net
-    username: carlos.sanchez@hype-tech.net
-    password: CG.jp.017
+    host: smtp.gmail.com
+    username: YOUR_USERNAME
+    password: YOUR_PASSWORD
     port: 587
     properties:
       mail:
