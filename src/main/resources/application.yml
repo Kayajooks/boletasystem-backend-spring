@@ -1,0 +1,18 @@
+spring:
+   mail:
+    default-encoding: UTF-8
+    host: mail.hype-tech.net
+    username: carlos.sanchez@hype-tech.net
+    password: CG.jp.017
+    port: 587
+    properties:
+      mail:
+        ssl:
+          enable: true
+        smtp:
+          auth: true
+          starttls:
+            enable: true       
+            required: true     
+    protocol: smtp
+    test-connection: true
